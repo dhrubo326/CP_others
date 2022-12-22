@@ -7,7 +7,7 @@ int main(){
 	freopen("output.txt", "w", stdout);
 	#endif
 	int answer = 0;
-	vector<int> A = {13, 15, 17, 19, 20, 1, 2, 3, 3, 4, 4};
+	vector<int> A = {13, 15, 17, 19, 20, 21, 22, 23, 1, 2, 4, 6};
 	int left, right, mid;
 	left = 0;
 	right = A.size()-1;
@@ -20,7 +20,7 @@ int main(){
 			break;
 		}
 		else if(mid > left && A[mid] < A[mid-1]){
-			answer = mid-1;
+			answer = mid;
 			break;
 		}
 
